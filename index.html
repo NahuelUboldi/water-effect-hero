@@ -6,24 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="ripple-ef"></div>
-
     <script
       src="https://code.jquery.com/jquery-3.6.3.min.js"
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js"></script>
+    <script src="./js/jquery.simple-text-rotator.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./simpletextrotator.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="ripple-ef">
+      <div class="container">
+        <header>
+          <div class="brand">
+            <img src="./assets/img/logo.png" width="200px" />
+          </div>
+          <menu>
+            <ul>
+              <li>INICIO</li>
+              <li>SOBRE YSATI</li>
+              <li>NUESTROS PROYECTOS</li>
+              <li>CURSOS</li>
+              <li>BLOG</li>
+              <li>CONTACTO</li>
+            </ul>
+          </menu>
+        </header>
+        <div class="header-title">
+          <div>
+
+            <h2>
+              Una gota de agua es Fexible <br />
+              Ahora más que nunca
+            </h2>
+            <div class="btn-container">
+              <a href="#">
+                <span>Click</span>
+                <div class="liquid"></div>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </header>
     <script src="app.js"></script>
-    <script>
-      $('.ripple-ef').ripples({
-        resolution: 512,
-        dropRadius: 20,
-        perturbance: 0.02,
-      });
-    </script>
+    <script></script>
   </body>
 </html>
