@@ -26,6 +26,7 @@ h6 {
   height: 100vh;
   background-image: url(./assets/img/water-bg/13.jpg);
   background-size: cover;
+  background-position: bottom;
   display: grid;
   place-content: center;
   text-transform: uppercase;
