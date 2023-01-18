@@ -1,0 +1,10 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+.ripple-ef {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./assets/img/bg2.jpg);
+  background-size: cover;
+}
