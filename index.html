@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Water effect hero</title>
 
     <script
       src="https://code.jquery.com/jquery-3.6.3.min.js"
@@ -14,8 +14,8 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js"></script>
     <script src="./js/jquery.simple-text-rotator.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./simpletextrotator.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -41,14 +41,17 @@
           <div>
 
             <h2>
-              Una gota de agua es Fexible <br />
+              Una gota de agua es <span class="rotate">flexible, poderosa, necesaria</span> <br />
               Ahora más que nunca
             </h2>
             <div class="btn-container">
-              <a href="#">
+              <button  data-gooey>
+                Click aquí
+              </button>
+              <!-- <a href="#">
                 <span>Click</span>
                 <div class="liquid"></div>
-              </a>
+              </a> -->
             </div>
             
           </div>
@@ -56,6 +59,5 @@
       </div>
     </header>
     <script src="app.js"></script>
-    <script></script>
   </body>
 </html>

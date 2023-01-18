@@ -27,13 +27,10 @@ h6 {
   background-image: url(./assets/img/water-bg/13.jpg);
   background-size: cover;
   background-position: bottom;
-  display: grid;
-  place-content: center;
-  text-transform: uppercase;
+position: absolute;
   padding:0px;
   margin:0px;
 }
-
 .container {
   width: 100vw;
   max-width: 1200px;
@@ -62,7 +59,7 @@ header menu ul li {
   cursor:pointer;
 }
 header menu ul li:hover {
-color: aquamarine
+color: #26b4ff;
 }
 
 
@@ -87,10 +84,10 @@ align-items:center;
   line-height: 1.4;
   text-transform: uppercase;
 }
-.header-title h2 span {
-  display:inline;
-}
 
+.header-title h2 span {
+  color: #26b4ff;
+}
 .btn-container {
   display:flex;
   justify-content:center;
@@ -99,8 +96,23 @@ align-items:center;
   text-align:center;
 }
 
-
-a {
+.btn-container  button {
+    background: #26b4ff;
+    border: none;
+    border-radius:0.7rem;
+    padding: 10px 40px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    z-index:2;
+    transition: all 0.5s ease; 
+}
+.btn-container button:hover {
+  background-color: white;
+}
+/* 
+.btn-container a {
   position: relative;
   padding: 20px 50px;
   display: block;
@@ -111,7 +123,7 @@ a {
   border-radius: 40px;
 }
 
-a span {
+.btn-container a span {
   position: relative;
   color: #fff;
   font-size: 20px;
@@ -120,7 +132,7 @@ a span {
   z-index: 1;
 }
 
-a .liquid {
+.btn-container a .liquid {
   position: absolute;
   top: -80px;
   left: 0;
@@ -131,8 +143,8 @@ a .liquid {
   transition: .5s;
 }
 
-a .liquid::after,
-a .liquid::before {
+.btn-container a .liquid::after,
+.btn-container a .liquid::before {
   content: '';
   width: 200%;
   height: 200%;
@@ -140,24 +152,24 @@ a .liquid::before {
   top: 0;
   left: 50%;
   transform: translate(-50%, -75%);
-  /* background: #000; */
+  background: #000;
 }
 
-a .liquid::before {
+.btn-container a .liquid::before {
   
   border-radius: 45%;
   background: rgba(20, 20, 20, 1);
   animation: animate 5s linear infinite;
 }
 
-a .liquid::after {
+.btn-container a .liquid::after {
   
   border-radius: 40%;
   background: rgba(20, 20, 20, .5);
   animation: animate 10s linear infinite;
 }
 
-a:hover .liquid{
+.btn-container a:hover .liquid{
   top: -120px;
 }
 
@@ -168,4 +180,4 @@ a:hover .liquid{
   100% {
     transform: translate(-50%, -75%) rotate(360deg);
   }
-}
+} */

@@ -7,7 +7,8 @@ var injectSVG = function injectSVG() {
 
 var gooeyButtons = function gooeyButtons() {
     var buttons = document.querySelectorAll("button[data-gooey]");
-    var mouseDot = document.createElement("SPAN");
+    var mouseDot = document.createElement("span");
+    console.log({buttons,mouseDot})
     var margin = 50;
     var size = 100;
 
