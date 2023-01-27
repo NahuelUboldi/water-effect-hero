@@ -3,14 +3,14 @@
   margin: 0px;
   box-sizing: border-box;
 }
-
+:root {
+  --primary: #043254;
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
-
-
 
 body {
   font-family: 'Poppins', sans-serif;
-  overflow:hidden;
+  /* overflow: hidden; */
 }
 h1,
 h2,
@@ -22,20 +22,27 @@ h6 {
 }
 
 .ripple-ef {
-  width: 100vw;
-  height: 100vh;
-  background-image: url(./assets/img/water-bg/13.jpg);
+  width: 100%;
+  height: auto;
+  background-image: url(./assets/img/water-bg/11.jpg);
   background-size: cover;
   background-position: bottom;
-position: absolute;
-  padding:0px;
-  margin:0px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
 }
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100vw;
   max-width: 1200px;
   height: 100vh;
   margin: 0 auto;
+}
+.wave.img {
+  z-index: 99;
 }
 header {
   padding: 1rem 0;
@@ -46,9 +53,9 @@ header menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  color:white;
-  font-size:1.2rem;
-  font-weight:700;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 header menu ul {
   list-style: none;
@@ -56,128 +63,57 @@ header menu ul {
   gap: 1rem;
 }
 header menu ul li {
-  cursor:pointer;
+  cursor: pointer;
 }
 header menu ul li:hover {
-color: #26b4ff;
+  color: var(--primary);
 }
 
-
 .header-title {
-  width:100%;
-  height:100%;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .header-title > div {
   width: 100%;
-  margin-top:-4rem;
+  margin-top: -4rem;
 }
 .header-title h2 {
-  text-align:center;
-    color:white;
+  text-align: center;
+  color: white;
   font-family: 'Roboto Slab', serif;
-  font-size:3.2rem;
+  font-size: 3.2rem;
   line-height: 1.4;
   text-transform: uppercase;
 }
 
 .header-title h2 span {
-  color: #26b4ff;
+  /* color: var(--primary); */
 }
 .btn-container {
-  display:flex;
-  justify-content:center;
-  width:100%;
-  margin:2rem 0;
-  text-align:center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem 0;
+  text-align: center;
 }
 
-.btn-container  button {
-    background: #26b4ff;
-    border: none;
-    border-radius:0.7rem;
-    padding: 10px 40px;
-    font-size: 20px;
-    color: black;
-    cursor: pointer;
-    outline: none;
-    z-index:2;
-    transition: all 0.5s ease; 
+.btn-container button {
+  background: #fff;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.5rem 3rem;
+  font-size: 1.7rem;
+  color: var(--primary);
+  cursor: pointer;
+  outline: none;
+  z-index: 2;
+  transition: all 0.5s ease;
 }
 .btn-container button:hover {
-  background-color: white;
+  background-color: var(--primary);
+  color: white;
 }
-/* 
-.btn-container a {
-  position: relative;
-  padding: 20px 50px;
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 200px;
-  overflow: hidden;
-  border-radius: 40px;
-}
-
-.btn-container a span {
-  position: relative;
-  color: #fff;
-  font-size: 20px;
-  font-family: Arial;
-  letter-spacing: 8px;
-  z-index: 1;
-}
-
-.btn-container a .liquid {
-  position: absolute;
-  top: -80px;
-  left: 0;
-  width: 200px;
-  height: 200px;
-  background: #4973ff;
-  box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
-  transition: .5s;
-}
-
-.btn-container a .liquid::after,
-.btn-container a .liquid::before {
-  content: '';
-  width: 200%;
-  height: 200%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -75%);
-  background: #000;
-}
-
-.btn-container a .liquid::before {
-  
-  border-radius: 45%;
-  background: rgba(20, 20, 20, 1);
-  animation: animate 5s linear infinite;
-}
-
-.btn-container a .liquid::after {
-  
-  border-radius: 40%;
-  background: rgba(20, 20, 20, .5);
-  animation: animate 10s linear infinite;
-}
-
-.btn-container a:hover .liquid{
-  top: -120px;
-}
-
-@keyframes animate {
-  0% {
-    transform: translate(-50%, -75%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -75%) rotate(360deg);
-  }
-} */
